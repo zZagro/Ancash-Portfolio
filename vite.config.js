@@ -6,8 +6,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        plugins_bz: resolve(__dirname, 'plugins/bazaar.html'),
-        plugins_fc: resolve(__dirname, 'plugins/fancy-crafting.html'),
+        projects: resolve(__dirname, 'projects.html'),
+        projects_bz: resolve(__dirname, 'projects/bazaar.html'),
+        projectss_fc: resolve(__dirname, 'projects/fancy-crafting.html'),
       },
     },
   },
