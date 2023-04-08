@@ -1,0 +1,225 @@
+.featured {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.featured__title {
+    font-size: var(--size-3xl);
+    color: var(--clr-light);
+}
+
+.featured__bz {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.featured__bz-title {
+    font-size: var(--size-3xl);
+    color: var(--clr-cyan400);
+    text-align: center;
+}
+
+.featured__bz-title-a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured__bz-description {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+    font-weight: 600;
+    text-align: center;
+}
+
+.featured__bz-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.featured__bz-img-wrapper {
+    position: relative;
+}
+
+/* .featured__bz-img-wrapper::after {
+    content: '';
+    background-color: rgba(217, 70, 239, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.featured__bz-img-wrapper:hover::after {
+    background-color: rgba(217, 70, 239, 0);
+} */
+
+.featured__fc {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.featured__fc-title {
+    font-size: var(--size-3xl);
+    color: var(--clr-cyan400);
+}
+
+.featured__fc-title-a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured__fc-description {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+    font-weight: 600;
+}
+
+.featured__fc-img-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.featured__fc-img-wrapper {
+    position: relative;
+}
+
+/* .featured__fc-img-wrapper::after {
+    content: '';
+    background-color: rgba(217, 70, 239, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.featured__fc-img-wrapper:hover::after {
+    background-color: rgba(217, 70, 239, 0);
+} */
+
+@media (min-width: 425px) {
+    .featured__title {
+        font-size: var(--size-4xl);
+    }
+
+    .featured__bz-title {
+        font-size: var(--size-3xl);
+    }
+
+    .featured__bz-description {
+        font-size: var(--size-base);
+    }
+
+    .featured__fc-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .featured__fc-description {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 768px) {
+    .featured__title {
+        font-size: var(--size-5xl);
+    }
+
+    .featured__bz-title {
+        font-size: var(--size-4xl);
+    }
+
+    .featured__bz-description {
+        font-size: var(--size-lg);
+    }
+
+    .featured__fc-title {
+        font-size: var(--size-4xl);
+    }
+    
+    .featured__fc-description {
+        font-size: var(--size-lg);
+    }
+}
+
+@media (min-width: 1024px) {
+    .featured__title {
+        font-size: var(--size-6xl);
+    }
+
+    .featured__bz-title {
+        font-size: var(--size-5xl);
+    }
+
+    .featured__bz-description {
+        font-size: var(--size-lg);
+    }
+
+    .featured__fc-title {
+        font-size: var(--size-5xl);
+    }
+    
+    .featured__fc-description {
+        font-size: var(--size-lg);
+    }
+
+    .featured__bz-img-container {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin: 0 0.5rem;
+    }
+
+    .featured__fc-img-container {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .featured__title {
+        font-size: var(--size-7xl);
+    }
+
+    .featured__bz-title {
+        font-size: var(--size-5xl);
+    }
+
+    .featured__bz-description {
+        font-size: var(--size-2xl);
+    }
+
+    .featured__fc-title {
+        font-size: var(--size-5xl);
+    }
+    
+    .featured__fc-description {
+        font-size: var(--size-2xl);
+    }
+}

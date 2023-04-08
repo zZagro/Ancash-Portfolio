@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer__developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+}
+
+.footer__developer-txt {
+    font-size: var(--size-base);
+    font-weight: 600;
+}
+
+.footer__developer-btn {
+    font-size: var(--size-base);
+}
+
+.footer__copyright {
+    font-weight: 600;
+    font-size: var(--size-sm);
+}
