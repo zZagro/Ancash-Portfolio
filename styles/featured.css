@@ -23,7 +23,7 @@
 }
 
 .featured__bz-title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-2xl);
     color: var(--clr-cyan400);
     text-align: center;
 }
@@ -80,7 +80,7 @@
 }
 
 .featured__fc-title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-2xl);
     color: var(--clr-cyan400);
 }
 
