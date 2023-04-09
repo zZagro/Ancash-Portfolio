@@ -26,6 +26,21 @@
     display: none;
 }
 
+.shapes__circle-1 {
+    top: 10svh;
+    left: 30svw;
+}
+
+.shapes__circle-2 {
+    top: 78svh;
+    left: 13svw;
+}
+
+.shapes__circle-3 {
+    top: 46svh;
+    left: 86svw;
+}
+
 @media (min-width: 768px) {
     .shapes__circle {
         display: inline;
