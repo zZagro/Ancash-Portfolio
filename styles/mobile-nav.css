@@ -63,7 +63,7 @@
 }
 
 .mobile-nav__plugins:hover ~ .mobile-nav__plugins-dropdown, .mobile-nav__plugins-dropdown:hover {
-    height: calc(calc(18.391px + var(--size-xxs)) * 5.5);
+    height: calc(calc(18.391px + var(--size-xxs)) * 6.5);
     box-shadow: 0 0 10px rgba(225, 33, 255, 0.5);
     margin-top: 10px;
     background-color: rgb(50,40,57);
@@ -86,5 +86,25 @@
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
     }
 }

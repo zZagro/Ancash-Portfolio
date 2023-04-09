@@ -11,15 +11,15 @@ const mobileNav = () => {
 
         if (isMobileNavOpen)
         {
-            mobileNav.style.display = 'flex';
-            mobileNav.style.animation = 'slideInLeft 1s'
             document.body.style.overflow = 'hidden';
+            mobileNav.style.display = 'flex';
+            mobileNav.style.animation = 'slideInLeft 0.5s'
         } 
         else 
         {
-            mobileNav.style.animation = 'slideOutLeft 1s'
+            mobileNav.style.animation = 'slideOutRight 0.5s'
             mobileNav.addEventListener('animationend', (e) => {
-                if (e.animationName === 'slideOutLeft') {
+                if (e.animationName === 'slideOutRight') {
                     mobileNav.style.display = 'none';
                     document.body.style.overflow = 'auto';
                 }
