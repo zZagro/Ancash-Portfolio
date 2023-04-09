@@ -159,6 +159,18 @@
     transition: all .3s;
 }
 
+.bz__features-title::before {
+    content: '> ';
+    position: absolute;
+    transform: translateX(-150%);
+    color: var(--clr-light);
+    transition: all .3s;
+}
+
+.bz__features:hover .bz__features-title::before {
+    transform: rotateZ(90deg) translateY(90%);
+}
+
 .bz__features-list {
     font-size: var(--size-sm);
     font-weight: 600;
