@@ -4,7 +4,7 @@ const nav = () => {
 
     if (dropdown.style.opacity != '0' && $(document).width() >= 768)
     {
-        $(plugins).css('padding-bottom', 'var(--size-xxs)');
+        $(plugins).css('padding-bottom', 'var(--size-sm)');
     }
 };
 

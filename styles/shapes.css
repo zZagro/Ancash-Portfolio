@@ -23,7 +23,7 @@
     border-radius: 50%;
     overflow: hidden;
     z-index: -10;
-    opacity: 0.5;
+    opacity: 0;
     display: none;
 }
 
@@ -45,7 +45,8 @@
 @media (min-width: 768px) {
     .shapes__circle {
         display: inline;
-        animation: circlePulse 5s ease-in-out 0s infinite;
+        /* animation: circlePulse 5s ease-in-out 0s infinite; */
+        animation: circleGrow 4s ease-in-out 0s infinite;
     }
 }
 
@@ -63,6 +64,7 @@
 
 @keyframes circlePulse {
     0%, 100% {
+        opacity: 0.5;
         height: 2px;
         width: 2px;
         border-width: 1px;
@@ -73,5 +75,25 @@
         width: var(--anim-size);
         transform: translate(calc(-0.5 * var(--anim-size)), calc(-0.5 * var(--anim-size)));
         border-width: var(--border-size);
+    }
+}
+
+@keyframes circleGrow {
+    0% {
+        opacity: 0;
+        height: 2px;
+        width: 2px;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    85% {
+        height: var(--anim-size);
+        width: var(--anim-size);
+        transform: translate(calc(-0.5 * var(--anim-size)), calc(-0.5 * var(--anim-size)));
+        border-width: var(--border-size);
+        opacity: 0;
     }
 }

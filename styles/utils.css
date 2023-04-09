@@ -16,6 +16,21 @@
     box-shadow: 5px 10px 20px rgba(225, 33, 255, 0.5), 5px 5px 5px rgba(225, 33, 255, 0.5);
 }
 
+.remove-link-styles {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-link {
+    text-shadow: 2px 3px 10px rgba(34, 211, 238, 0.2), 2px 2px 5px rgba(34, 211, 238, 0.2);
+    transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.title-link:hover {
+    text-shadow: 5px 10px 20px rgba(34, 211, 238, 0.35), 5px 5px 5px rgba(34, 211, 238, 0.35);
+    transform: translateY(-3px);
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;

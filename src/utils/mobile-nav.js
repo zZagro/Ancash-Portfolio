@@ -13,7 +13,7 @@ const mobileNav = () => {
         {
             document.body.style.overflow = 'hidden';
             mobileNav.style.display = 'flex';
-            mobileNav.style.animation = 'slideInLeft 0.5s'
+            mobileNav.style.animation = 'slideInRight 0.5s'
         } 
         else 
         {
