@@ -107,19 +107,35 @@
     <!-- End of Mobile Navigation -->
 
     <main>
-      <section class="featured container section">
-        <h1 class="featured__title">MY PROJECTS</h1>
-        <section class="featured__bz container">
-          <h2 class="featured__bz-title"><a class="featured__bz-title-a" href="/projects/bazaar.html">BAZAAR</a></h2>
-          <p class="featured__bz-description">Like a real stock market, with supply and demand, and everyone can take part in it!</p>
+      <section class="projects-featured container">
+        <h1 class="projects-featured__title">MY PROJECTS</h1>
+
+        <section class="projects-featured__banner container">
+          <div class="projects-featured__banner-info">
+            <h2 class="projects-featured__banner-info-h2"><strong>Test</strong> all of my plugins <strong>now</strong> at:</h2>
+            <p class="projects-featured__banner-info-p">Someip.com</p>
+            <div class="projects-featured__banner-stats">
+              <div class="projects-featured__banner-stats-status-container">
+                <p class="projects-featured__banner-stats-status"><strong>Status</strong>:&nbsp;<p class="projects-featured__banner-stats-status" style="color: red;">Offline</p></p>
+              </div>
+              <p class="projects-featured__banner-stats-players"><strong>Players</strong>: 10/100</p>
+            </div>
+          </div>
+
+          <img class="projects-featured__banner-logo" src="/logo.jpg" alt="Server Icon">
+        </section>
+
+        <section class="projects-featured__section container">
+          <h2 class="projects-featured__title-item"><a class="projects-featured__title-a" href="/projects/bazaar.html">BAZAAR</a></h2>
+          <p class="projects-featured__description">Like a real stock market, with supply and demand, and everyone can take part in it!</p>
           
-          <div class="featured__bz-img-container">
-            <div class="featured__bz-img-wrapper">
+          <div class="projects-featured__img-container">
+            <div class="projects-featured__img-wrapper">
               <video muted autoplay="autoplay" loop="loop">
                 <source type="video/mp4" src="/bz/bz_1.mp4">
               </video>
             </div>
-            <div class="featured__bz-img-wrapper">
+            <div class="projects-featured__img-wrapper">
               <video muted autoplay="autoplay" loop="loop">
                 <source type="video/mp4" src="/bz/bz_2.mp4">
               </video>
@@ -127,18 +143,33 @@
           </div>
         </section>
 
-        <section class="featured__fc container section">
-          <h2 class="featured__fc-title"><a class="featured__fc-title-a" href="/projects/fancy-crafting.html">FANCY CRAFTING</a></h2>
-          <p class="featured__fc-description">Custom Crafting GUI, Custom Recipes/Grids All Vanilla Recipes,...</p>
+        <section class="projects-featured__section container section">
+          <h2 class="projects-featured__title-item"><a class="projects-featured__title-a" href="/projects/fancy-crafting.html">FANCY CRAFTING</a></h2>
+          <p class="projects-featured__description">Custom Crafting GUI, Custom Recipes/Grids All Vanilla Recipes,...</p>
 
-          <div class="featured__fc-img-container">
-            <div class="featured__fc-img-wrapper">
+          <div class="projects-featured__img-container">
+            <div class="projects-featured__img-wrapper">
               <img src="/fc/fc_1.jpg" alt="fc_1.fpg">
             </div>
-            <div class="featured__fc-img-wrapper">
+            <div class="projects-featured__img-wrapper">
               <img src="/fc/fc_2.jpg" alt="fc_2.jpg">
             </div>
           </div>
+        </section>
+
+        <section class="projects-featured__section container section">
+          <h2 class="projects-featured__title-item"><a class="projects-featured__title-a" href="/projects/sockets.html">SOCKETS</a></h2>
+          <p class="projects-featured__description">This simple java application creates a simple Socket Server which other Client Sockets can connect to. You can use this to share data across multiple Minecraft server or something else if you want to. It provides a Bukkit/Spigot like plugin framework to easily listen to incoming packets and respond to them as you want to.</p>
+        </section>
+
+        <section class="projects-featured__section container section">
+          <h2 class="projects-featured__title-item"><a class="projects-featured__title-a" href="/projects/ieconomy.html">IECONOMY</a></h2>
+          <p class="projects-featured__description">Simple Economy plugin for multiple server without MySQL, etc.</p>
+        </section>
+
+        <section class="projects-featured__section container section">
+          <h2 class="projects-featured__title-item"><a class="projects-featured__title-a" href="/projects/ilibrary.html">ILIBRARY</a></h2>
+          <p class="projects-featured__description">Library i use for my plugins</p>
         </section>
       </section>
     </main>
