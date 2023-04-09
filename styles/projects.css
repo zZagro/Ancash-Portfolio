@@ -131,8 +131,6 @@
         font-size: var(--size-base);
     }
 
-    /* Server Stats */
-
     .projects-featured__banner-info-h2 {
         font-size: var(--size-base);
     }
@@ -162,8 +160,6 @@
     .projects-featured__description {
         font-size: var(--size-lg);
     }
-
-    /* Server Stats */
 
     .projects-featured__banner-info-h2 {
         font-size: var(--size-xl);
@@ -232,8 +228,6 @@
     .projects-featured__description {
         font-size: var(--size-2xl);
     }
-
-    /* Server Stats */
 
     .projects-featured__banner-info-h2 {
         font-size: var(--size-2xl);

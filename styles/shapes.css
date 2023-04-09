@@ -7,7 +7,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 150svh;
     width: 100%;
     overflow: hidden;
     z-index: -10;
@@ -38,7 +38,7 @@
 }
 
 .shapes__circle-3 {
-    top: 46svh;
+    top: 67svh;
     left: 86svw;
 }
 
