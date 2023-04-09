@@ -12,14 +12,18 @@ const mobileNav = () => {
         if (isMobileNavOpen)
         {
             mobileNav.style.display = 'flex';
-            mobileNav.style.transform = 'translateX(0%)'
-            document.body.style.overflowY = 'hidden';
+            mobileNav.style.animation = 'slideInLeft 1s'
+            document.body.style.overflow = 'hidden';
         } 
         else 
         {
-            mobileNav.style.display = 'none';
-            mobileNav.style.transform = 'translateX(100%)'
-            document.body.style.overflowY = 'auto';
+            mobileNav.style.animation = 'slideOutLeft 1s'
+            mobileNav.addEventListener('animationend', (e) => {
+                if (e.animationName === 'slideOutLeft') {
+                    mobileNav.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
         }
     });
 
@@ -28,8 +32,7 @@ const mobileNav = () => {
             if (link != pluginLink) {
                 isMobileNavOpen = false;
                 mobileNav.style.display = 'none';
-                mobileNav.style.transform = 'translateX(100%)'
-                document.body.style.overflowY = 'auto';
+                document.body.style.overflow = 'auto';
             }
         });
     });
