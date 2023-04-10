@@ -175,7 +175,7 @@
     font-size: var(--size-sm);
     font-weight: 600;
     color: var(--clr-slate400);
-    list-style-type: circle;
+    list-style-type: none;
     height: 0;
     padding: 0;
     padding-left: 10px;

@@ -6,21 +6,17 @@ const serverStats = () => {
     var maxPlayers;
     var onlinePlayers;
     var status;
-    var hostname;
 
-    const ipText = document.querySelector('.projects-featured__banner-info-p');
     const statusText = document.querySelectorAll('.projects-featured__banner-stats-status');
     const playersText = document.querySelector('.projects-featured__banner-stats-players');
-    
-    $.getJSON("https://api.mcsrvstat.us/2/hypixel.net",
-        function (data) {
-            maxPlayers = data.players.max;
-            onlinePlayers = data.players.online;
-            status = data.online;
-            hostname = data.hostname;
 
-            $(ipText).html(hostname);
-            
+    $.getJSON("https://mcapi.us/server/status?ip=denzo.algoholics.eu",
+        function (data) {
+            console.log(data);
+            maxPlayers = data.players.max;
+            onlinePlayers = data.players.now;
+            status = data.online;
+
             if (status)
             {
                 $(statusText[1]).html('Online');

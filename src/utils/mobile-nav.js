@@ -13,13 +13,13 @@ const mobileNav = () => {
         {
             document.body.style.overflow = 'hidden';
             mobileNav.style.display = 'flex';
-            mobileNav.style.animation = 'slideInRight 0.5s'
+            mobileNav.style.animation = 'slideInLeft 0.5s'
         } 
         else 
         {
-            mobileNav.style.animation = 'slideOutRight 0.5s'
+            mobileNav.style.animation = 'slideOutLeft 0.5s'
             mobileNav.addEventListener('animationend', (e) => {
-                if (e.animationName === 'slideOutRight') {
+                if (e.animationName === 'slideOutLeft') {
                     mobileNav.style.display = 'none';
                     document.body.style.overflow = 'auto';
                 }
