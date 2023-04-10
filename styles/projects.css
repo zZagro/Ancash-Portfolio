@@ -161,6 +161,10 @@
         font-size: var(--size-lg);
     }
 
+    .projects-featured__banner-info {
+        margin-left: 0.5rem;
+    }
+
     .projects-featured__banner-info-h2 {
         font-size: var(--size-xl);
     }
@@ -183,6 +187,7 @@
 
     .projects-featured__banner-logo {
         width: 7.5rem;
+        margin-right: 0.5rem;
     }
 
     .projects-featured__banner {
