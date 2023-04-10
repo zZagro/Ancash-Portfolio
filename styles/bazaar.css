@@ -248,9 +248,11 @@
 .bz__vids-video {
     aspect-ratio: 16 / 9;
     width: 100%;
+    border-radius: 2px;
 }
 
 .bz__vids-text {
+    text-align: center;
     font-size: var(--size-2xl);
     color: var(--clr-light);
 }
@@ -366,7 +368,7 @@
     }
 
     .bz__title-description {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 
     .bz__showcase-img-wrapper {
@@ -475,5 +477,25 @@
 
     .bz__showcase-img-wrapper {
         width: 700px;
+    }
+}
+
+@keyframes descriptionTextOut {
+    0% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes descriptionTextIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
     }
 }

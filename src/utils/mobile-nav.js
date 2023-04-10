@@ -11,6 +11,8 @@ const mobileNav = () => {
 
         if (isMobileNavOpen)
         {
+            $(window).scrollTop(0);
+
             document.body.style.overflow = 'hidden';
             mobileNav.style.display = 'flex';
             mobileNav.style.animation = 'slideInLeft 0.5s'

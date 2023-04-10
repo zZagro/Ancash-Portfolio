@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ancash</title>
+
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="/">Home</a>
+            </li>
+            <li>
+              <a class="header__link header__plugins" href="/projects.html">Projects</a>
+              <ul class="header__plugins-dropdown">
+                <li>
+                  <a class="header__link" href="/projects/bazaar.html">Bazaar</a>
+                </li>
+                <li>
+                  <a class="header__link" href="/projects/fancy-crafting.html">Fancy Crafting</a>
+                </li>
+                <li>
+                  <a class="header__link" href="/projects/ieconomy.html">IEconomy</a>
+                </li>
+                <li>
+                  <a class="header__link" href="/projects/ilibrary.html">ILibrary</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">Sockets</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="header__link" href="https://github.com/Ancash/" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a class="header__link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+          </svg>          
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-nav__menu">
+              <li>
+                <a class="mobile-nav__link" href="/">Home</a>
+              </li>
+                <li>
+                    <a class="mobile-nav__link mobile-nav__plugins" href="#">Projects</a>
+                    <ul class="mobile-nav__plugins-dropdown">
+                      <li>
+                        <a class="mobile-nav__link-dropdown" href="/projects.html">Overview</a>
+                      </li>
+                      <li>
+                        <a class="mobile-nav__link-dropdown" href="/projects/bazaar.html">Bazaar</a>
+                      </li>
+                      <li>
+                        <a class="mobile-nav__link-dropdown" href="/projects/fancy-crafting.html">Fancy Crafting</a>
+                      </li>
+                      <li>
+                        <a class="mobile-nav__link-dropdown" href="/projects/ieconomy.html">IEconomy</a>
+                      </li>
+                      <li>
+                        <a class="mobile-nav__link-dropdown" href="/projects/ilibrary.html">ILibrary</a>
+                      </li>
+                      <li>
+                        <a class="mobile-nav__link-dropdown" href="#">Sockets</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="https://github.com/Ancash/" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <a class="mobile-nav__link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+
+    <main>
+      <div class="sockets__title-wrapper">
+        <h1 class="sockets-title title-link"><a class="sockets-a" href="https://www.spigotmc.org/resources/sockets.94930/" target="_blank">SOCKETS</a></h2>
+      </div>
+      <p class="sockets-description">A Socket Server</p>
+
+        <section class="sockets__description container section">
+          <h2 class="sockets__description-title">What is Sockets?</h2>
+          <p class="sockets__description-description">A socket is one endpoint of a two-way communication link between two programs running on the network. A socket is bound to a port number so that the TCP layer can identify the application that data is destined to be sent to.<br><br>This simple java application creates a simple Socket Server which other Client Sockets can connect to. You can use this to share data across multiple Minecraft server or something else if you want to. It provides a Bukkit/Spigot like plugin framework to easily listen to incoming packets and respond to them as you want to.</p>
+        </section>
+
+      <section class="sockets__download container section">
+        <h2 class="sockets__download-header"><strong>Find</strong> and <strong>Download</strong> the project <strong>now</strong> on:</h2>
+        <div class="sockets__download-buttons">
+          <a class="btn sockets__download-btn" href="https://www.spigotmc.org/resources/sockets.94930/" target="_blank">SpigotMC</a>
+          <a class="btn sockets__download-btn" href="https://github.com/Ancash/Sockets" target="_blank">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container section">
+      <div class="footer__developer">
+        <p class="footer__developer-txt">Website Developer:</p>
+        <a class="btn footer__developer-btn" href="https://github.com/zZagro" target="_blank">Zagro</a>
+      </div>
+      <p class="footer__copyright">© Zagro</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>

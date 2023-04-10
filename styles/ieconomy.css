@@ -1,0 +1,298 @@
+.econ__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.econ-title {
+    font-size: var(--size-4xl);
+    color: var(--clr-cyan400);
+    text-align: center;
+    width: auto;
+    transition: transform .3s;
+    margin-bottom: 1rem;
+}
+
+.econ-a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.econ-description {
+    font-size: var(--size-base);
+    color: var(--clr-slate400);
+    font-weight: 600;
+    text-align: center;
+}
+
+.econ__description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.econ__description-title {
+    color: var(--clr-cyan400);
+    font-size: var(--size-2xl);
+}
+
+.econ__description:hover {
+    cursor: default;
+}
+
+.econ__description-description {
+    text-align: center;
+    font-weight: 600;
+    color: var(--clr-slate400);
+    font-size: var(--size-sm);
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.econ__features {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.econ__features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: default;
+    width: auto;
+}
+
+.econ__features-title {
+    color: var(--clr-cyan400);
+    font-size: var(--size-2xl);
+    transition: all .3s;
+}
+
+.econ__features-title::before {
+    content: '> ';
+    position: absolute;
+    transform: translateX(-150%);
+    color: var(--clr-light);
+    transition: all .3s;
+}
+
+.econ__features-container:hover .econ__features-title::before {
+    transform: rotateZ(90deg) translateY(90%);
+}
+
+.econ__features-list {
+    font-size: var(--size-sm);
+    font-weight: 600;
+    color: var(--clr-slate400);
+    list-style-type: none;
+    height: 0;
+    padding: 0;
+    padding-left: 10px;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.econ__features-list > li {
+    text-indent: -8px;
+    margin-bottom: 0.2rem;
+}
+
+.econ__features-list > li:before {
+    content: "- ";
+}
+
+.econ__use {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.econ__use-title {
+    color: var(--clr-cyan400);
+    font-size: var(--size-2xl);
+}
+
+.econ__use-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.econ__use-container-title {
+    color: var(--clr-light);
+    font-size: var(--size-xl);
+}
+
+.econ__use-container-p {
+    color: var(--clr-slate400);
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--size-sm);
+}
+
+.econ__download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.econ__download-header {
+    text-align: center;
+    font-size: var(--size-lg);
+}
+
+.econ__download-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media (min-width: 425px) {
+    .econ-title {
+        font-size: var(--size-4xl);
+    }
+
+    .econ-description {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 768px) {
+    .econ-title {
+        font-size: var(--size-5xl);
+    }
+
+    .econ-description {
+        font-size: var(--size-xl);
+    }
+
+    .econ__description-title {
+        font-size: var(--size-3xl);
+    }
+
+    .econ__description-description {
+        font-size: var(--size-base);
+        width: 90%;
+    }
+
+    .econ__features-title {
+        font-size: var(--size-3xl);
+    }
+
+    .econ__features-list {
+        font-size: var(--size-base);
+    }
+
+    .econ__use-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .econ__use-container-title {
+        font-size: var(--size-2xl);
+    }
+    
+    .econ__use-container-p {
+        font-size: var(--size-base);
+    }
+
+    .econ__download {
+        gap: 1.5rem;
+    }
+
+    .econ__download-header {
+        font-size: var(--size-3xl);
+    }
+
+    .econ__download-buttons {
+        gap: 2rem;
+    }
+
+    .econ__download-btn {
+        font-size: var(--size-xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .econ-title {
+        font-size: var(--size-6xl);
+    }
+
+    .econ-description {
+        font-size: var(--size-lg);
+    }
+
+    .econ__description-description {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .econ-title {
+        font-size: var(--size-7xl);
+    }
+
+    .econ-description {
+        font-size: var(--size-2xl);
+    }
+
+    .econ__description-title {
+        font-size: var(--size-4xl);
+    }
+
+    .econ__description-description {
+        font-size: var(--size-xl);
+        width: 50%;
+    }
+
+    .econ__features-title {
+        font-size: var(--size-4xl);
+    }
+
+    .econ__features-list {
+        font-size: var(--size-xl);
+    }
+
+    .econ__use {
+        gap: 1.5rem;
+    }
+
+    .econ__use-title {
+        font-size: var(--size-4xl);
+    }
+    
+    .econ__use-container-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .econ__use-container-p {
+        font-size: var(--size-xl);
+        width: 70svw;
+    }
+
+    .econ__download-header {
+        font-size: var(--size-4xl);
+    }
+
+    .econ__download-buttons {
+        gap: 3rem;
+    }
+
+    .econ__download-btn {
+        font-size: var(--size-2xl);
+    }
+}

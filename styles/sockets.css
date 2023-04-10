@@ -1,0 +1,225 @@
+.sockets__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sockets-title {
+    font-size: var(--size-4xl);
+    color: var(--clr-cyan400);
+    text-align: center;
+    width: auto;
+    transition: transform .3s;
+    margin-bottom: 1rem;
+}
+
+.sockets-a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sockets-description {
+    font-size: var(--size-base);
+    color: var(--clr-slate400);
+    font-weight: 600;
+    text-align: center;
+}
+
+.sockets__description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sockets__description-title {
+    color: var(--clr-cyan400);
+    font-size: var(--size-2xl);
+}
+
+.sockets__description:hover {
+    cursor: default;
+}
+
+.sockets__description-description {
+    text-align: center;
+    font-weight: 600;
+    color: var(--clr-slate400);
+    font-size: var(--size-sm);
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.sockets__use {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sockets__use-title {
+    color: var(--clr-cyan400);
+    font-size: var(--size-2xl);
+}
+
+.sockets__use-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sockets__use-container-title {
+    color: var(--clr-light);
+    font-size: var(--size-xl);
+}
+
+.sockets__use-container-p {
+    color: var(--clr-slate400);
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--size-sm);
+}
+
+.sockets__download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sockets__download-header {
+    text-align: center;
+    font-size: var(--size-lg);
+}
+
+.sockets__download-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media (min-width: 425px) {
+    .sockets-title {
+        font-size: var(--size-4xl);
+    }
+
+    .sockets-description {
+        font-size: var(--size-base);
+    }
+}
+
+@media (min-width: 768px) {
+    .sockets-title {
+        font-size: var(--size-5xl);
+    }
+
+    .sockets-description {
+        font-size: var(--size-xl);
+    }
+
+    .sockets__description-title {
+        font-size: var(--size-3xl);
+    }
+
+    .sockets__description-description {
+        font-size: var(--size-base);
+        width: 90%;
+    }
+
+    .sockets__use-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .sockets__use-container-title {
+        font-size: var(--size-2xl);
+    }
+    
+    .sockets__use-container-p {
+        font-size: var(--size-base);
+    }
+
+    .sockets__download {
+        gap: 1.5rem;
+    }
+
+    .sockets__download-header {
+        font-size: var(--size-3xl);
+    }
+
+    .sockets__download-buttons {
+        gap: 2rem;
+    }
+
+    .sockets__download-btn {
+        font-size: var(--size-xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .sockets-title {
+        font-size: var(--size-6xl);
+    }
+
+    .sockets-description {
+        font-size: var(--size-lg);
+    }
+
+    .sockets__description-description {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sockets-title {
+        font-size: var(--size-7xl);
+    }
+
+    .sockets-description {
+        font-size: var(--size-2xl);
+    }
+
+    .sockets__description-title {
+        font-size: var(--size-4xl);
+    }
+
+    .sockets__description-description {
+        font-size: var(--size-xl);
+        width: 50%;
+    }
+
+    .sockets__use {
+        gap: 1.5rem;
+    }
+
+    .sockets__use-title {
+        font-size: var(--size-4xl);
+    }
+    
+    .sockets__use-container-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .sockets__use-container-p {
+        font-size: var(--size-xl);
+        width: 70svw;
+    }
+
+    .sockets__download-header {
+        font-size: var(--size-4xl);
+    }
+
+    .sockets__download-buttons {
+        gap: 3rem;
+    }
+
+    .sockets__download-btn {
+        font-size: var(--size-2xl);
+    }
+}

@@ -1,0 +1,118 @@
+.contact__title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-title {
+    font-size: var(--size-4xl);
+    color: var(--clr-cyan400);
+    text-align: center;
+    width: auto;
+}
+
+.contact-a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact__posib {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__posib-title {
+    text-align: center;
+    font-size: var(--size-2xl);
+    color: var(--clr-cyan400);
+}
+
+.contact__posib-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__posib-container-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__posib-container-title {
+    font-size: var(--size-xl);
+    color: var(--clr-fuchsia);
+}
+
+@media (min-width: 425px) {
+    .contact-title {
+        font-size: var(--size-4xl);
+    }
+
+    .contact-description {
+        font-size: var(--size-base);
+    }
+
+    .contact__posib-container-title {
+        font-size: var(--size-2xl);
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-title {
+        font-size: var(--size-5xl);
+    }
+
+    .contact-description {
+        font-size: var(--size-xl);
+    }
+
+    .contact__posib-container {
+        flex-direction: row;
+    }
+
+    .contact__posib-container-title {
+        font-size: var(--size-3xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-title {
+        font-size: var(--size-6xl);
+    }
+
+    .contact-description {
+        font-size: var(--size-lg);
+    }
+
+    .contact__posib-title {
+        width: 80%;
+        font-size: var(--size-3xl);
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact-title {
+        font-size: var(--size-7xl);
+    }
+
+    .contact-description {
+        font-size: var(--size-2xl);
+    }
+
+    .contact__posib-title {
+        width: 70%;
+        font-size: var(--size-4xl);
+    }
+    
+    .contact__posib-container-title {
+        font-size: var(--size-4xl);
+    }
+}

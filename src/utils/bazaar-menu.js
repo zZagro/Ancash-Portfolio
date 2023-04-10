@@ -3,6 +3,7 @@ const bazaarMenu = () => {
     var page = path.split("/").pop();
     if (page != 'bazaar.html') return
 
+    var textContainer = document.querySelector('.bz__description-container');
     var text = document.querySelector('.bz__description-container-description');
     var titles = document.querySelectorAll('.bz__description-title');
     
@@ -19,22 +20,35 @@ const bazaarMenu = () => {
             titles.forEach((t) => {
                 if (t != title) $(t).css('color', 'var(--clr-light)');
             });
-            $(title).css('color', 'var(--clr-fuchsia)');
-            if (title.id == 'wib')
-            {
-                $(text).html(text1);
-            }
-            else if (title.id == 'wif')
-            {
-                $(text).html(text2);
-            }
-            else if (title.id == 'bo')
-            {
-                $(text).html(text3);
-            }
-            else if (title.id == 'so')
-            {
-                $(text).html(text4);
+            if ($(title).css('color') != 'rgb(217, 70, 239)') {
+                $(title).css('color', 'var(--clr-fuchsia)');
+                textContainer.style.animation = 'descriptionTextOut .15s';
+                textContainer.addEventListener('animationend', (e) => {
+                    if (e.animationName == 'descriptionTextOut') {
+                        if (title.id == 'wib')
+                        {
+                            $(text).html(text1);
+                        }
+                        else if (title.id == 'wif')
+                        {
+                            $(text).html(text2);
+                        }
+                        else if (title.id == 'bo')
+                        {
+                            $(text).html(text3);
+                        }
+                        else if (title.id == 'so')
+                        {
+                            $(text).html(text4);
+                        }
+                        textContainer.style.animation = 'descriptionTextIn .15s';
+                        textContainer.addEventListener('animationend', (e) => {
+                            if (e.animationName === 'descriptionTextIn') {
+                                textContainer.style.animation = 'none';
+                            }
+                        });
+                    }
+                });
             }
         });
     });
