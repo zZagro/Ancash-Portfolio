@@ -43,7 +43,7 @@ const bazaarMenu = () => {
 
     var featuresText = document.querySelector('.bz__features-title');
     var featuresUl = document.querySelector('.bz__features-list');
-    var features = document.querySelector('.bz__features');
+    var features = document.querySelector('.bz__features-container');
 
     $(features).mouseenter(function () {
         var lineHeight = $(featuresUl).css('line-height');
