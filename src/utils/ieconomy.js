@@ -1,7 +1,7 @@
 const ieconomy = () => {
     var path = window.location.pathname;
-    var page = path.split("/").pop();
-    if (page != 'ieconomy.html') return
+    var page = path.split("/").pop().split(".")[0];
+    if (!page.includes('ieconomy'))return
 
     //Features
 
@@ -9,10 +9,11 @@ const ieconomy = () => {
     var featuresUl = document.querySelector('.econ__features-list');
     var features = document.querySelector('.econ__features-container');
 
-    $(features).mouseenter(function () {
-        var lineHeight = $(featuresUl).css('line-height');
+    var autoHeight = $(featuresUl).css('height', 'auto').height();
+    $(featuresUl).css('height', '0px');
 
-        $(featuresUl).css('height', 'calc(calc(' + lineHeight + ' * 3) + calc(0.2rem * 10))');
+    $(features).mouseenter(function () {
+        $(featuresUl).css('height', autoHeight + 'px');
 
         $(featuresText).css('text-shadow', '2px 3px 10px rgba(34, 211, 238, 0.2), 2px 2px 5px rgba(34, 211, 238, 0.2)');
     });

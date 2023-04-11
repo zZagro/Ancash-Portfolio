@@ -151,6 +151,9 @@
     font-size: var(--size-sm);
     margin-top: 1.5rem;
     width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
 }
 
 .bz__features {
