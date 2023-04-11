@@ -96,7 +96,6 @@
     padding: 0;
     padding-left: 10px;
     overflow: hidden;
-    transition: all .3s;
 }
 
 .econ__features-list > li {

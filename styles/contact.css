@@ -26,8 +26,8 @@
 
 .contact__posib-title {
     text-align: center;
-    font-size: var(--size-2xl);
-    color: var(--clr-cyan400);
+    font-size: var(--size-xl);
+    color: var(--clr-light);
 }
 
 .contact__posib-container {
@@ -51,6 +51,11 @@
     color: var(--clr-fuchsia);
 }
 
+.contact__posib-container-dc {
+    aspect-ratio: 7 / 10;
+    width: 100%;
+}
+
 @media (min-width: 425px) {
     .contact-title {
         font-size: var(--size-4xl);
@@ -63,6 +68,10 @@
     .contact__posib-container-title {
         font-size: var(--size-2xl);
     }
+
+    .contact__posib-container-dc {
+        width: 350px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -73,6 +82,11 @@
     .contact-description {
         font-size: var(--size-xl);
     }
+
+    .contact__posib-title {
+        font-size: var(--size-2xl);
+    }
+    
 
     .contact__posib-container {
         flex-direction: row;
@@ -109,7 +123,6 @@
 
     .contact__posib-title {
         width: 70%;
-        font-size: var(--size-4xl);
     }
     
     .contact__posib-container-title {

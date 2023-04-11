@@ -70,6 +70,7 @@
     
     .hero__description {
         font-size: var(--size-lg);
+        width: 90%;
     }
 
     .hero__btn {
@@ -92,6 +93,7 @@
     
     .hero__description {
         font-size: var(--size-xl);
+        width: 80%;
     }
 
     .hero__btn {
@@ -110,6 +112,7 @@
     
     .hero__description {
         font-size: var(--size-2xl);
+        width: 70%;
     }
 
     .hero__btn {

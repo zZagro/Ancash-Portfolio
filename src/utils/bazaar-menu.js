@@ -59,6 +59,7 @@ const bazaarMenu = () => {
         $(text).html(input);
         var output = $(text).css('height', 'auto').height();
         $(text).css('height', '0px');
+        $(text).css('transition', 'all .3s');
         return output;
     }
 
@@ -70,10 +71,10 @@ const bazaarMenu = () => {
 
     var autoHeight = $(featuresUl).css('height', 'auto').height();
     $(featuresUl).css('height', '0px');
+    $(featuresUl).css('transition', 'all .3s');
 
     $(features).mouseenter(function () {
         $(featuresUl).css('height', autoHeight + 'px');
-
         $(featuresText).css('text-shadow', '2px 3px 10px rgba(34, 211, 238, 0.2), 2px 2px 5px rgba(34, 211, 238, 0.2)');
     });
 
