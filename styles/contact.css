@@ -56,6 +56,16 @@
     width: 100%;
 }
 
+.contact__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__btn {
+    font-size: var(--size-2xl);
+}
+
 @media (min-width: 425px) {
     .contact-title {
         font-size: var(--size-4xl);
@@ -72,6 +82,10 @@
     .contact__posib-container-dc {
         width: 350px;
     }
+
+    .contact__btn {
+        font-size: var(--size-3xl);
+    }
 }
 
 @media (min-width: 768px) {
@@ -86,7 +100,6 @@
     .contact__posib-title {
         font-size: var(--size-2xl);
     }
-    
 
     .contact__posib-container {
         flex-direction: row;
@@ -126,6 +139,10 @@
     }
     
     .contact__posib-container-title {
+        font-size: var(--size-4xl);
+    }
+
+    .contact__btn {
         font-size: var(--size-4xl);
     }
 }
