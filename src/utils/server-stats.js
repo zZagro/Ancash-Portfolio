@@ -1,8 +1,4 @@
 const serverStats = () => {
-    var path = window.location.pathname;
-    var page = path.split("/").pop().split(".")[0];
-    if (!page.includes('projects')) return
-
     var maxPlayers;
     var onlinePlayers;
     var status;
